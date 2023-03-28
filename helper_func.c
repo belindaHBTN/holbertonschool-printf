@@ -19,3 +19,10 @@ int print_string(char *)
 
 	return (str_len);
 }
+
+int print_percent()
+{
+	_putchar('%');
+
+	return (1);
+}
