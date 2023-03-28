@@ -6,7 +6,7 @@ int print_char(va_list ptr)
     return (1);
 }
 
-int print_string(char *)
+int print_string(char *str)
 {
 	int str_len;
 
