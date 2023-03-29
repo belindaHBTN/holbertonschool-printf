@@ -1,19 +1,29 @@
 #include "main.h"
 #include <stdlib.h>
+#include <string.h>
+#include <stdarg.h>
+
+/**
+ * get_type_func - match the function
+ * sp: the format identifier that need to be match
+ *
+ * Description: match the function
+ * Return: a function
+ */
 
 int (*get_type_func(char *sp))(va_list ptr)
 {
 	pr_t prs[] = {
-		{"c", print_char},
-		{"s", print_string},
-		{"%", print_percent},
-		{NULL, NULL}
+		{'c', print_char},
+		{'s', print_string},
+		{'%', print_percent},
+		{'\0', NULL}
 	};
 
 	int i;
 
 	i = 0;
-	while (prs[i].fmtp != NULL)
+	while (prs[i].fmtp != '\0')
 	{
 		if (strcmp(prs[i].fmtp, sp) == 0)
 		{
@@ -22,7 +32,8 @@ int (*get_type_func(char *sp))(va_list ptr)
 		i = i + 1;
 	}
 
-	_putchar("%");
+	_putchar('%');
 	_putchar(sp);
-	return(2);
+
+	return(print_default);
 }
