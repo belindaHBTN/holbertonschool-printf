@@ -18,7 +18,7 @@ int _printf(const char *format, ...)
 	if (format == NULL)
 	{
 		va_end(ptr);
-		return (0);
+		return ("");
 	}
 
 	i = 0;
