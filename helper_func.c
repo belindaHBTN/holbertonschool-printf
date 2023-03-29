@@ -10,15 +10,14 @@
  */
 int print_char(va_list ptr)
 {
-    _putchar(va_arg(ptr, int));
+	_putchar(va_arg(ptr, int));
 
-    return (1);
+	return (1);
 }
 
 /**
  * print_string - print the string to the stdout
- * @str: the string to be printed
- *
+ * @ptr: pointer to list of arguments
  * Description: print the string to the stdout
  * Return: the number of character in the string
  */
@@ -53,7 +52,7 @@ int print_percent(__attribute__ ((unused)) va_list ptr)
 
 /**
  * print_default - print nothing, a function to be returned
- * ptr: will not be used
+ * @ptr: will not be used
  *
  * Description: print nothing, a function to be returned
  * Return: 2
