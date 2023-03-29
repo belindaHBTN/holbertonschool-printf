@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdarg.h>
+#include <stdlib.h>
 
 /**
  * print_char - print the char
@@ -26,6 +27,10 @@ int print_string(va_list ptr)
 	char *str = va_arg(ptr, char *);
 	int str_len;
 
+	if (str == NULL)
+	{
+		str = "(null)";
+	}
 	str_len = 0;
 	while (str[str_len] != '\0')
 	{
