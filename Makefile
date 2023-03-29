@@ -14,3 +14,6 @@ all: $(OBJ)
 0:
 	$(BETTY) $(SRC0)
 	$(CC) $(CFLAGS) $(SRC0) -o $(NAME0)
+
+test:
+	$(CC) $(CFLAGS) $(SRC0) -o $(NAME0)
