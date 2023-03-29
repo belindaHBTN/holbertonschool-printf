@@ -14,18 +14,18 @@
 int (*get_type_func(char sp))(va_list ptr)
 {
 	pr_t prs[] = {
-		{"c", print_char},
-		{"s", print_string},
-		{"%", print_percent},
-		{NULL, NULL}
+		{'c', print_char},
+		{'s', print_string},
+		{'%', print_percent},
+		{'\0', NULL}
 	};
 
 	int i;
 
 	i = 0;
-	while (*prs[i].fmtp != '\0')
+	while (prs[i].fmtp != '\0')
 	{
-		if (*prs[i].fmtp == sp)
+		if (prs[i].fmtp == sp)
 		{
 			return (prs[i].f);
 		}

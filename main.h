@@ -9,7 +9,7 @@
  */
 struct pr_type
 {
-	char *fmtp;
+	char fmtp;
 	int (*f)(va_list ptr);
 };
 typedef struct pr_type pr_t;
