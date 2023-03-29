@@ -11,7 +11,7 @@
  * Return: a function
  */
 
-int (*get_type_func(char *sp))(va_list ptr)
+int (*get_type_func(char sp))(va_list ptr)
 {
 	pr_t prs[] = {
 		{'c', print_char},
