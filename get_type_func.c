@@ -17,7 +17,7 @@ int (*get_type_func(char sp))(va_list ptr)
 		{"c", print_char},
 		{"s", print_string},
 		{"%", print_percent},
-		{"\0", NULL}
+		{NULL, NULL}
 	};
 
 	int i;
