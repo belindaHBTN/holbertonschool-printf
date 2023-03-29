@@ -29,7 +29,7 @@ int _printf(const char *format, ...)
 			else
 			{
 				va_end(ptr);
-				return (0);
+				return (-1);
 			}
 		}
 		else
