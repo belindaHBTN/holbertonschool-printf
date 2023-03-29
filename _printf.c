@@ -3,8 +3,9 @@
 #include <stdlib.h>
 
 /**
- *
- *
+ * _printf - sends a formated string to the standard output
+ * @format: a character string
+ * Return: number of characters printed
  */
 int _printf(const char *format, ...)
 {
@@ -20,7 +21,7 @@ int _printf(const char *format, ...)
 	{
 		if (format[i] == '%')
 		{
-			len = len + get_type_func(format[i+1])(ptr);
+			len = len + get_type_func(format[i + 1])(ptr);
 			i = i + 1;
 		}
 		else
