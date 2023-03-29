@@ -23,9 +23,8 @@ int (*get_type_func(char sp))(va_list ptr)
 	int i;
 
 	i = 0;
-	if (prs[i].fmtp == '\0')
+	if (sp == '\0')
 	{
-		_putchar('%');
 		return (print_default1);
 	}
 
