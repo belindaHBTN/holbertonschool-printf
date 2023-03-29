@@ -24,9 +24,10 @@ int print_char(va_list ptr)
  */
 int print_string(va_list ptr)
 {
-	char *str = va_arg(ptr, char *);
+	char *str;
 	int str_len;
 
+	str = va_arg(ptr, char *);
 	if (str == NULL)
 	{
 		str = "(null)";
