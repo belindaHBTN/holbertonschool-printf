@@ -23,6 +23,12 @@ int (*get_type_func(char sp))(va_list ptr)
 	int i;
 
 	i = 0;
+	if (prs[i].fmtp == '\0')
+	{
+		_putchar('%');
+		return (1);
+	}
+
 	while (prs[i].fmtp != '\0')
 	{
 		if (prs[i].fmtp == sp)
