@@ -5,7 +5,7 @@
 
 /**
  * get_type_func - match the function
- * sp: the format identifier that need to be match
+ * @sp: the format identifier that need to be match
  *
  * Description: match the function
  * Return: a function
@@ -35,5 +35,5 @@ int (*get_type_func(char sp))(va_list ptr)
 	_putchar('%');
 	_putchar(sp);
 
-	return(print_default);
+	return (print_default);
 }
