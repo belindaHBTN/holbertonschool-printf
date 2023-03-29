@@ -13,6 +13,11 @@ int _printf(const char *format, ...)
 	int len;
 	va_list ptr;
 
+	if (format == NULL)
+	{
+		return (0);
+	}
+
 	va_start(ptr, format);
 
 	if (format == NULL)
