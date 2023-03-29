@@ -21,8 +21,15 @@ int _printf(const char *format, ...)
 	{
 		if (format[i] == '%')
 		{
-			len = len + get_type_func(format[i + 1])(ptr);
-			i = i + 1;
+			if (format[i + 1] != '\0')
+			{
+				len = len + get_type_func(format[i + 1])(ptr);
+				i = i + 1;
+			}
+			else
+			{
+				return (0);
+			}
 		}
 		else
 		{
