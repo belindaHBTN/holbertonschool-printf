@@ -26,7 +26,7 @@ int (*get_type_func(char sp))(va_list ptr)
 	if (prs[i].fmtp == '\0')
 	{
 		_putchar('%');
-		return (1);
+		return (print_default1);
 	}
 
 	while (prs[i].fmtp != '\0')

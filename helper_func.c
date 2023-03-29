@@ -61,3 +61,14 @@ int print_default(__attribute__ ((unused)) va_list ptr)
 {
 	return (2);
 }
+
+/**
+ * print_default1 - print nothing, a function to be returned
+ * @ptr: will not be used
+ * Description: print nothing, function to be returned
+ * Return: 1
+ */
+int print_default1(__attribute__ ((unused)) va_list ptr)
+{
+	return (1);
+}
