@@ -1,6 +1,12 @@
 #ifndef _MAIN_H_
 #define _MAIN_H_
-
+#include <stdarg.h>
+/**
+ * struct print - Struct print
+ *
+ * @fmtp: format specifier
+ * @f: The function associated
+ */
 struct pr_type
 {
 	char *fmtp;
@@ -8,7 +14,7 @@ struct pr_type
 };
 typedef struct pr_type pr_t;
 
-int _putchar(va_list ptr);
+int _putchar(char c);
 int print_char(va_list ptr);
 int print_string(va_list ptr);
 int print_percent(va_list ptr);
