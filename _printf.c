@@ -14,10 +14,15 @@ int _printf(const char *format, ...)
 	va_list ptr;
 
 	va_start(ptr, format);
+	if (format == NULL)
+	{
+		va_end(ptr);
+		return (0);
+	}
+
 	i = 0;
 	len = 0;
-
-	while (format != NULL && format[i] != '\0')
+	while (format[i] != '\0')
 	{
 		if (format[i] == '%')
 		{
