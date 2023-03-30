@@ -22,20 +22,17 @@ int _printf(const char *format, ...)
 
 	i = 0;
 	len = 0;
-	while (format != NULL && format[i] != '\0')
+	while (format[i] != '\0')
 	{
 		if (format[i] == '%')
 		{
-			if (format[i + 1] != '\0')
-			{
-				len = len + get_type_func(format[i + 1])(ptr);
-				i = i + 1;
-			}
-			else
+			if (format[i + 1] == '\0')
 			{
 				va_end(ptr);
 				return (-1);
 			}
+			len = len + get_type_func(format[i + 1])(ptr);
+			i = i + 1;
 		}
 		else
 		{
