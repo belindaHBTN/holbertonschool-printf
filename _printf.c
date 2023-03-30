@@ -12,13 +12,14 @@ int _printf(const char *format, ...)
 	int i;
 	int len;
 	va_list ptr;
-
-	va_start(ptr, format);
+	int (*print_fn)(va_list);
 
 	if (format == NULL)
 	{
 		return (-1);
 	}
+
+	va_start(ptr, format);
 
 	i = 0;
 	len = 0;
@@ -31,7 +32,18 @@ int _printf(const char *format, ...)
 				va_end(ptr);
 				return (-1);
 			}
-			len = len + get_type_func(format[i + 1])(ptr);
+
+			print_fn = get_type_func(format[i + 1]);
+			if (print_fn == NULL)
+			{
+				_putchar('%');
+				_putchar(format[i + 1]);
+				len = len + 2;
+			}
+			else
+			{
+				len = len + (*print_fn)(ptr);
+			}
 			i = i + 1;
 		}
 		else

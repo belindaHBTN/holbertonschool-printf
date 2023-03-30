@@ -32,8 +32,5 @@ int (*get_type_func(char sp))(va_list ptr)
 		i = i + 1;
 	}
 
-	_putchar('%');
-	_putchar(sp);
-
-	return (print_default);
+	return (NULL);
 }

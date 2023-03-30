@@ -56,15 +56,3 @@ int print_percent(__attribute__ ((unused)) va_list ptr)
 	return (1);
 }
 
-/**
- * print_default - print nothing, a function to be returned
- * @ptr: will not be used
- *
- * Description: print nothing, a function to be returned
- * Return: 2
- */
-int print_default(__attribute__ ((unused)) va_list ptr)
-{
-	return (2);
-}
-
