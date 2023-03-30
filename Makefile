@@ -1,7 +1,7 @@
 CC = gcc
 OBJ = $(SRC:.c=.o)
 RM = rm -f
-CFLAGS = -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
+CFLAGS = -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format
 BETTY = betty
 
 SRC0 = _putchar.c main.c helper_func.c get_type_func.c _printf.c
