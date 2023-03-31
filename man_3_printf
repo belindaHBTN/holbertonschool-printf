@@ -1,25 +1,35 @@
 ./" This is the manpage for _printf function
 .TH man 3 "31 March 2023" "1.0" "_printf man page"
 .SH NAME
-
+_printf - produces output according to a format
 .SH SYPNOSIS
+#include "main.h"
+
+#include <stdarg.h>
+
+#include <stdlib.h>
+
+int _printf(const shar *format, ...);
 
 .SH DESCRIPTION
-
+_printf is used to print a character string to standard output. Format specifiers can be used in place, and will be replaced by corresponding argument values. 
 .SH OPTIONS
-.IP c
-to print character
-.IP s
-to print string
-.IP i
+.IP %c
+to print a character
+.IP %s
+to print a string
+.IP %i
 to print an integer
-.IP d
+.IP %d
 to print an integer
-.IP %
+.IP %%
 to print a single '%'
+.SH RETURN VALUES
+If successful, the number of characters printed is returned.
+If an output error is encountered, -1 is returned.
 .SH SEE ALSO
-
+man 3 printf
 .SH BUGS
 
 .SH AUTHOR
-Angella Lao & Belinda Shan.
+Written by Angella Lao & Belinda Shan.
