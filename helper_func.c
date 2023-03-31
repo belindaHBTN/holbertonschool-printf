@@ -79,17 +79,17 @@ int print_num(va_list ptr)
 		num = num * (-1);
 	}
 
-	while ((n / divide) > 9)
+	while ((num / divide) > 9)
 	{
 		divide = divide * 10;
 	}
 
 	while (divide != 0)
 	{
-		len = len + _putchar('0' + (num / divide);
+		len = len + _putchar('0' + (num / divide));
 		num = num % divide;
-		divide = divide / 10;
+		divide = (divide / 10);
 	}
 
-	return (len);
+	return (len - 1);
 }
