@@ -1,31 +1,37 @@
 ./" This is the manpage for _printf function
-.TH man 3 "31 March 2023" "1.0" "_printf man page"
+.TH _printf 3 "31 March 2023" "1.0" "Program Manual for _printf"
 .SH NAME
 _printf - produces output according to a format
 .SH SYPNOSIS
+printf(FORMAT, ARGUMENT...)
+.br
+
 #include "main.h"
 .br
 #include <stdarg.h>
 .br
 #include <stdlib.h>
+.br
+#include <unistd.h>
+.br
 
-int _printf(const shar *format, ...);
+int _printf(const char *format, ...);
 
 .SH DESCRIPTION
 _printf is used to print a character string to standard output. Format specifiers can be used in place, and will be replaced by corresponding argument values. 
 .SH OPTIONS
 .IP %c
-to print a character
+to print a single character
 .IP %s
-to print a string
+to print a string of characters
 .IP %i
-to print an integer
+to print an integer in base 10
 .IP %d
-to print an integer
+to print a decimal (base 10) number
 .IP %%
-to print a single '%'
+to print a percent sign
 .SH RETURN VALUES
-If successful, the number of characters printed is returned.
+If successful, the number of characters printed is returned.(excluding the null byte used to end output to strings)
 .br
 If an output error is encountered, -1 is returned.
 .SH EXAMPLES
