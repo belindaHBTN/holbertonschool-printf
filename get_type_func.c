@@ -16,8 +16,8 @@ int (*get_type_func(char sp))(va_list ptr)
 	pr_t prs[] = {
 		{'c', print_char},
 		{'s', print_string},
-		{'i', print_int},
-		{'d', print_int},
+		{'i', print_num},
+		{'d', print_num},
 		{'%', print_percent},
 		{'\0', NULL}
 	};
