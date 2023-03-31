@@ -56,3 +56,40 @@ int print_percent(__attribute__ ((unused)) va_list ptr)
 	return (1);
 }
 
+/**
+ * print_num - print the integer
+ * @ptr: pointer to the list of arguments
+ *
+ * Description: print the integer
+ * Return: an integer - the length of the characters printed
+ */
+int print_num(va_list ptr)
+{
+	int num;
+	int divide;
+	int len;
+
+	num = va_arg(ptr, int);
+	divide = 1;
+	len = 0;
+
+	if (num < 0)
+	{
+		len = len + _putchar('-');
+		num = num * (-1);
+	}
+
+	while ((n / divide) > 9)
+	{
+		divide = divide * 10;
+	}
+
+	while (divide != 0)
+	{
+		len = len + _putchar('0' + (num / divide);
+		num = num % divide;
+		divide = divide / 10;
+	}
+
+	return (len);
+}
