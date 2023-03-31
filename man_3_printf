@@ -23,9 +23,9 @@ to print a single character
 .IP %s
 to print a string of characters
 .IP %i
-to print an integer in base 10
+to print an integer
 .IP %d
-to print a decimal (base 10) number
+to print a decimal number
 .IP %%
 to print a single percent sign
 .SH RETURN VALUES
@@ -33,14 +33,27 @@ If successful, the number of characters printed is returned.
 .br
 If an output error is encountered, -1 is returned.
 .SH EXAMPLES
-To print "This is a string."
+To print "This is a string." and the number of characters printed:
 .br
-Perform: _printf("This is a string.\\n");
-.br
-To print: "5 is an integer."
-.br
-Perform: _printf("%d is an integer.\\n", 5);
 
+#include "main.h"
+.br
+
+int main()
+.br
+{
+.br
+	int len;
+
+.br
+	len = _printf("This is a string.\\n");
+.br
+	_printf("The last string contains %d characters", len);
+.br
+	return (0);
+.br
+}
+.br
 .SH SEE ALSO
 man 3 printf
 
