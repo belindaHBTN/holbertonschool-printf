@@ -17,7 +17,7 @@ typedef struct pr_type pr_t;
 int _putchar(char c);
 int print_char(va_list ptr);
 int print_string(va_list ptr);
-int print_int(va_list ptr);
+int print_num(va_list ptr);
 int print_percent(va_list ptr);
 int (*get_type_func(char sp))(va_list ptr);
 int _printf(const char *format, ...);
