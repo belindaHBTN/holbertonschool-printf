@@ -4,9 +4,9 @@
 _printf - produces output according to a format
 .SH SYPNOSIS
 #include "main.h"
-
+.br
 #include <stdarg.h>
-
+.br
 #include <stdlib.h>
 
 int _printf(const shar *format, ...);
@@ -26,7 +26,17 @@ to print an integer
 to print a single '%'
 .SH RETURN VALUES
 If successful, the number of characters printed is returned.
+.br
 If an output error is encountered, -1 is returned.
+.SH EXAMPLES
+.IP Input:
+_printf("This is a string.\\n");
+.IP Stdout:
+This is a string.
+.IP Input:
+_printf("%d is an integer.\\n", 5);
+.IP Stdout:
+5 is an integer.
 .SH SEE ALSO
 man 3 printf
 .SH BUGS
