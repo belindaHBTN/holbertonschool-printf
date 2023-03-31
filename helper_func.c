@@ -65,7 +65,7 @@ int print_percent(__attribute__ ((unused)) va_list ptr)
  */
 int print_num(va_list ptr)
 {
-	int num;
+	long int num;
 	int divide;
 	int len;
 
