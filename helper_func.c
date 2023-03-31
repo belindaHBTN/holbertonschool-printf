@@ -91,5 +91,5 @@ int print_num(va_list ptr)
 		divide = (divide / 10);
 	}
 
-	return (len - 1);
+	return (len);
 }
