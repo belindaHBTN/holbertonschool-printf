@@ -1,0 +1,25 @@
+./" This is the manpage for _printf function
+.TH man 3 "31 March 2023" "1.0" "_printf man page"
+.SH NAME
+
+.SH SYPNOSIS
+
+.SH DESCRIPTION
+
+.SH OPTIONS
+.IP c
+to print character
+.IP s
+to print string
+.IP i
+to print an integer
+.IP d
+to print an integer
+.IP %
+to print a single '%'
+.SH SEE ALSO
+
+.SH BUGS
+
+.SH AUTHOR
+Angella Lao & Belinda Shan.
