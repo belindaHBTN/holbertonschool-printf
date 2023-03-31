@@ -39,7 +39,7 @@ To print "This is a string." and the number of characters printed:
 #include "main.h"
 .br
 
-int main()
+int main(void)
 .br
 {
 .br
@@ -48,7 +48,7 @@ int main()
 .br
 	len = _printf("This is a string.\\n");
 .br
-	_printf("The last string contains %d characters", len);
+	_printf("The last string contains %d characters.\\n", len);
 .br
 	return (0);
 .br
