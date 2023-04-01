@@ -22,20 +22,20 @@ This `_printf` function has been tested on Ubuntu 20.04
 
 This repository contains the following files:
 
-| **File**        | **Decription**                                               |
+| **File**        | **Description**                                              |
 | --------------- | ------------------------------------------------------------ |
 | main.h          | header file with prototypes                                  |
 | \_putchar.c     | a function that writes a single character to the standard output stream |
-| helper_func.c   | a file that contains some functions that perform part of the computation of another function |
+| helper_func.c   | contains functions that are called upon by get_type_func.c. These functions print characters to the standard output|
 | get_type_func.c | a function that selects the correct function to perform the printing |
 | \_printf.c      | a function that formats output conversion and prints data.   |
-| Makefile        | a file that manages and maintains computer programs consisting many component files |
-| man_3_printf    | man page                                                     |
+| Makefile        | a file containing a set of commands, used to organise code for compilation|
+| man_3_printf    | man page - a user manual for using the _printf function      |
 | README.md       | readme page                                                  |
 
 ### Format specifiers
 
-| **specifier** | **output**                    |
+| **Specifier** | **Output**                    |
 | ------------- | ----------------------------- |
 | %c            | prints a single character     |
 | %s            | prints a string of characters |
