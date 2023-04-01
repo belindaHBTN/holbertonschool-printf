@@ -35,13 +35,13 @@ Once cloned over, the repository will contain the following files:
 
 ### Format specifiers
 
-| **specifier** | **output**             |
-| ------------- | ---------------------- |
-| %c            | a single character     |
-| %s            | a string of characters |
-| %%            | a single percent sign  |
-| %i            | an integer             |
-| %d            | a decimal number       |
+| **specifier** | **output**                    |
+| ------------- | ----------------------------- |
+| %c            | prints a single character     |
+| %s            | prints a string of characters |
+| %%            | prints a single percent sign  |
+| %i            | prints an integer             |
+| %d            | prints a decimal number       |
 
 
 
