@@ -8,11 +8,11 @@ This printf has been tested on Ubuntu 20.04
 
 ## Table of Contents
 
-* [Repository Contents ](#Repository Contents)
-	* [Format specifiers](#Format specifiers)
+* [Repository Contents ](#Repository-Contents)
+	* [Format specifiers](#Format-specifiers)
 * [Installation](#Installation)
-* [Compile with Makefile](#Compile with Makefile)
-* [How to use](#How to use)
+* [Compile with Makefile](#Compile-with-Makefile)
+* [How to use](#How-to-use)
 * [Flowchart](#Flowchart)
 * [Authors](#Authors)
 
@@ -103,7 +103,7 @@ $ The last string contains 18 characters.
 
 ## Flowchart
 
-![_printf_flowchart](Flowchart/_printf_flowchart.png)
+![_printf_flowchart](./_printf_flowchart.png)
 
 
 
