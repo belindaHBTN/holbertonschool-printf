@@ -2,7 +2,7 @@
 
 The requirements of this Holberton School project was to recreate the C library function printf. This function sends formatted output to the standard output stream by formatting the argument(s) passed in into a character string and embedding the arguments(s) into another character string. This version is called `_printf`.
 
-This _printf function has been tested on Ubuntu 20.04
+This `_printf` function has been tested on Ubuntu 20.04
 
 
 
@@ -20,7 +20,7 @@ This _printf function has been tested on Ubuntu 20.04
 
 ## Repository Contents
 
-Once cloned over, the repository will contain the following files:
+This repository contains the following files:
 
 | **File**        | **Decription**                                               |
 | --------------- | ------------------------------------------------------------ |
