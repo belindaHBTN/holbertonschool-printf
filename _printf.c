@@ -9,20 +9,14 @@
  */
 int _printf(const char *format, ...)
 {
-	int i;
-	int len;
+	int i = 0;
+	int len = 0;
 	va_list ptr;
 	int (*print_fn)(va_list);
 
 	if (format == NULL)
-	{
 		return (-1);
-	}
-
 	va_start(ptr, format);
-
-	i = 0;
-	len = 0;
 	while (format[i] != '\0')
 	{
 		if (format[i] == '%')
@@ -53,7 +47,6 @@ int _printf(const char *format, ...)
 		}
 		i = i + 1;
 	}
-
 	va_end(ptr);
 	return (len);
 }
