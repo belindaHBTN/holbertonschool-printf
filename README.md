@@ -50,7 +50,7 @@ This repository contains the following files:
 1. Clone the repository into your directory
 
 ```
-$ git clone https://github.com/nikolasribeiro/printf.git
+$ git clone https://github.com/belindaHBTN/holbertonschool-printf
 ```
 2. Change to the holbertonschool-printf repository
 
